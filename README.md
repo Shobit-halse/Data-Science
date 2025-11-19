@@ -1,107 +1,150 @@
-# Practical 2 - Data Loading and Wrangling
+# Data Science Practicals
+
+A comprehensive collection of hands-on Python exercises covering fundamental to advanced data science concepts using real-world datasets.
 
 ## Overview
-This practical covers fundamental data science skills including loading datasets from various sources and performing essential data wrangling operations using pandas and scikit-learn.
 
-## Contents
+This repository contains practical implementations of essential data science techniques. Each practical demonstrates industry-standard approaches to data manipulation, analysis, preprocessing, and machine learning using Python and popular libraries.
 
-### 2A - Loading Datasets
-**Notebook:** `2A.ipynb`
+## Technologies Used
 
-Learn different methods to load and create datasets for machine learning projects.
+- **Python 3.x**
+- **pandas** - Data manipulation and analysis
+- **NumPy** - Numerical computing
+- **scikit-learn** - Machine learning and preprocessing
+- **Matplotlib** - Data visualization
 
-**Topics:**
-- Loading built-in datasets from scikit-learn (Digits dataset)
-- Creating simulated datasets for regression, classification, and clustering
-- Loading real-world data from CSV files
-- Visualizing clustered data with matplotlib
+## Topics Covered
 
-**Key Libraries:** `sklearn.datasets`, `pandas`, `matplotlib`
-
----
-
-### 2(B, C) - Data Wrangling
-**Notebook:** `2(B, C).ipynb`  
-**Dataset:** `Plane-Crashes.csv`
-
-Master essential pandas operations for cleaning, transforming, and analyzing data.
-
-**Topics:**
-- **DataFrame Basics:** Creating, loading, exploring (head, tail, shape, describe)
-- **Navigation:** Selecting rows/columns with iloc, conditional filtering
-- **Data Manipulation:** Replacing values, renaming columns, setting index
-- **Aggregation:** Min, max, sum, mean, count, unique values
-- **Missing Data:** Identifying, filling, and dropping missing values
-- **Grouping:** GroupBy operations, time-based resampling
-- **Advanced Operations:** Looping, applying functions, concatenating, merging DataFrames
-
-**Key Libraries:** `pandas`, `numpy`
-
----
-
-## Datasets Used
-
-| File | Description | Size |
-|------|-------------|------|
-| `Plane-Crashes.csv` | Historical aviation accident data | 28,536 records |
-| Built-in datasets | Scikit-learn's digits, iris, etc. | Varies |
-| Simulated data | Synthetically generated for practice | Custom |
-
----
-
-## Learning Outcomes
-
-By completing this practical, you will:
-- ✅ Load data from multiple sources (CSV, built-in, simulated)
-- ✅ Understand DataFrame structure and navigation
-- ✅ Clean and preprocess messy real-world data
-- ✅ Handle missing values effectively
-- ✅ Perform grouping and aggregation operations
-- ✅ Transform and reshape data for analysis
-- ✅ Merge and combine multiple datasets
-
----
-
-## Key Skills Developed
-
-### Data Loading
-- Working with different data formats
-- Understanding dataset structure
-- Creating synthetic data for testing
+### Data Loading & Creation
+- Loading built-in datasets from scikit-learn
+- Creating synthetic datasets for testing
+- Reading CSV files and handling various data formats
+- Understanding dataset structure and properties
 
 ### Data Wrangling
-- Filtering and selecting data
-- Handling missing values
-- Transforming data types
-- Aggregating and summarizing
-- Combining multiple data sources
+- DataFrame operations and navigation
+- Filtering and selecting data based on conditions
+- Handling missing values (detection, deletion, imputation)
+- Data transformation and cleaning
+- Grouping and aggregation operations
+- Time series resampling
+- Merging and concatenating datasets
+
+### Numerical Data Preprocessing
+- Feature scaling (MinMaxScaler, StandardScaler)
+- Robust scaling for outlier handling
+- Normalization (L1 and L2 norms)
+- K-Means clustering for pattern discovery
+- Statistical operations and transformations
+
+### Categorical Data Handling
+- One-hot encoding for nominal features
+- Ordinal encoding for ordered categories
+- Multilabel encoding techniques
+- Dictionary vectorization
+- Missing categorical value imputation
+- Handling imbalanced classes (weighting, sampling)
+
+## Datasets
+
+The practicals use diverse real-world datasets including:
+- Housing and demographic data
+- Historical event records
+- Music and entertainment data
+- Scikit-learn built-in datasets
+- Synthetically generated data for testing
+
+## Repository Structure
+
+```
+Data-Science-Practicals/
+├── Practical2/                     # Data loading and wrangling
+├── Practical3/                     # Data preprocessing
+├── [More practicals to be added]
+└── README.md                       # This file
+```
+
+Each practical folder contains:
+- Jupyter notebooks with implementations
+- Datasets (CSV files)
+- Individual README files with detailed documentation
+
+## Getting Started
+
+### Prerequisites
+```bash
+pip install pandas numpy scikit-learn matplotlib jupyter
+```
+
+### Running the Notebooks
+```bash
+jupyter notebook
+```
+
+Navigate to the desired practical folder and open the notebook.
+
+## Key Concepts
+
+### Data Preprocessing Pipeline
+1. **Load** - Import data from various sources
+2. **Explore** - Understand structure, types, and distributions
+3. **Clean** - Handle missing values and outliers
+4. **Transform** - Scale numerical features, encode categorical variables
+5. **Prepare** - Create ML-ready feature matrices
+
+### When to Use What
+
+**Scaling Techniques:**
+- Use **MinMaxScaler** when you need bounded values (0-1)
+- Use **StandardScaler** for normally distributed features
+- Use **RobustScaler** when data contains outliers
+
+**Encoding Techniques:**
+- Use **One-hot encoding** for nominal categories (no order)
+- Use **Ordinal encoding** for ordered categories (low/medium/high)
+- Use **Label encoding** for target variables
+
+**Missing Data:**
+- **Delete** when data is abundant and missingness is random
+- **Impute** when data is limited or missingness is systematic
+
+## Learning Path
+
+Follow the practicals in numerical order for a structured learning experience. Each practical builds upon concepts from previous ones, progressing from basic data operations to advanced preprocessing and machine learning techniques.
+
+## Skills Developed
+
+- Data manipulation with pandas
+- Feature engineering and transformation
+- Handling real-world messy data
+- Preparing data for machine learning
+- Understanding preprocessing best practices
+- Working with different data types and formats
+
+## Applications
+
+These techniques are fundamental for:
+- Machine learning model preparation
+- Data analysis and exploration
+- Feature engineering for predictive models
+- Data cleaning and quality improvement
+- Handling production datasets
+
+## Notes
+
+- All notebooks include working code with real datasets
+- Each practical builds upon previous concepts
+- Code follows industry best practices
+- Techniques are applicable to any dataset
 
 ---
 
-## Files in This Practical
-
-```
-Practical2/
-├── 2A.ipynb                    # Loading datasets
-├── 2(B, C).ipynb              # Data wrangling
-├── Plane-Crashes.csv          # Dataset
-├── README_2A.md               # Detailed 2A documentation
-├── README_2BC.md              # Detailed 2BC documentation
-└── README_Practical2.md       # This file
-```
+**Author:** Shobit Halse
+**Institution:** Sheth L.U.J. & Sir M.V. College Of Arts, Science & Commerce
 
 ---
 
-## Quick Start
+## License
 
-1. **Install required libraries:**
-   ```bash
-   pip install pandas numpy scikit-learn matplotlib
-   ```
-
-2. **Open Jupyter Notebook:**
-   ```bash
-   jupyter notebook
-   ```
-
-3. **Start with 2A** to learn data loading, then move to **2(B, C)** for wrangling
+This project is for educational purposes.
