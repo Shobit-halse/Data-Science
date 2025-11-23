@@ -14,15 +14,32 @@ This repository contains practical implementations of essential data science tec
 - **scikit-learn** - Machine learning and preprocessing
 - **Matplotlib** - Data visualization
 
+## Repository Structure
+
+```
+Data-Science-Practicals/
+├── Data Frames and Basic Data Pre-processing/
+│   └── Data loading, wrangling, and basic preprocessing
+├── Feature Scaling and Dummification/
+│   └── Numerical preprocessing and categorical encoding
+├── Logistic Regression and Decision Tree/
+│   └── Classification models and evaluation
+├── Principal Component Analysis (PCA)/
+│   └── Dimensionality reduction techniques
+└── README.md
+```
+
+Each practical folder contains:
+- Jupyter notebooks with implementations
+- Datasets (CSV files)
+- Code demonstrating real-world applications
+
 ## Topics Covered
 
-### Data Loading & Creation
+### 1. Data Frames and Basic Data Pre-processing
 - Loading built-in datasets from scikit-learn
 - Creating synthetic datasets for testing
 - Reading CSV files and handling various data formats
-- Understanding dataset structure and properties
-
-### Data Wrangling
 - DataFrame operations and navigation
 - Filtering and selecting data based on conditions
 - Handling missing values (detection, deletion, imputation)
@@ -31,14 +48,10 @@ This repository contains practical implementations of essential data science tec
 - Time series resampling
 - Merging and concatenating datasets
 
-### Numerical Data Preprocessing
+### 2. Feature Scaling and Dummification
 - Feature scaling (MinMaxScaler, StandardScaler)
 - Robust scaling for outlier handling
 - Normalization (L1 and L2 norms)
-- K-Means clustering for pattern discovery
-- Statistical operations and transformations
-
-### Categorical Data Handling
 - One-hot encoding for nominal features
 - Ordinal encoding for ordered categories
 - Multilabel encoding techniques
@@ -46,38 +59,41 @@ This repository contains practical implementations of essential data science tec
 - Missing categorical value imputation
 - Handling imbalanced classes (weighting, sampling)
 
+### 3. Logistic Regression and Decision Tree
+- Building logistic regression models for binary classification
+- Evaluating model performance (accuracy, precision, recall)
+- Constructing decision tree models
+- Interpreting decision rules for classification
+- Confusion matrix and ROC curve analysis
+- Model pruning and optimization
+- Feature importance analysis
+
+### 4. Principal Component Analysis (PCA)
+- Dimensionality reduction techniques
+- Feature extraction and transformation
+- Variance analysis and component selection
+- Visualizing high-dimensional data
+
 ## Datasets
 
 The practicals use diverse real-world datasets including:
 - Housing and demographic data
 - Historical event records
 - Music and entertainment data
+- Apple quality assessment data
 - Scikit-learn built-in datasets
 - Synthetically generated data for testing
-
-## Repository Structure
-
-```
-Data-Science-Practicals/
-├── Practical2/                     # Data loading and wrangling
-├── Practical3/                     # Data preprocessing
-├── [More practicals to be added]
-└── README.md                       # This file
-```
-
-Each practical folder contains:
-- Jupyter notebooks with implementations
-- Datasets (CSV files)
-- Individual README files with detailed documentation
 
 ## Getting Started
 
 ### Prerequisites
+
 ```bash
 pip install pandas numpy scikit-learn matplotlib jupyter
 ```
 
 ### Running the Notebooks
+
 ```bash
 jupyter notebook
 ```
@@ -87,6 +103,7 @@ Navigate to the desired practical folder and open the notebook.
 ## Key Concepts
 
 ### Data Preprocessing Pipeline
+
 1. **Load** - Import data from various sources
 2. **Explore** - Understand structure, types, and distributions
 3. **Clean** - Handle missing values and outliers
@@ -121,6 +138,8 @@ Follow the practicals in numerical order for a structured learning experience. E
 - Preparing data for machine learning
 - Understanding preprocessing best practices
 - Working with different data types and formats
+- Building and evaluating classification models
+- Dimensionality reduction and feature extraction
 
 ## Applications
 
@@ -130,6 +149,7 @@ These techniques are fundamental for:
 - Feature engineering for predictive models
 - Data cleaning and quality improvement
 - Handling production datasets
+- Model evaluation and optimization
 
 ## Notes
 
@@ -141,7 +161,7 @@ These techniques are fundamental for:
 ---
 
 **Author:** Shobit Halse
-
+  
 **Institution:** Sheth L.U.J. & Sir M.V. College Of Arts, Science & Commerce
 
 ---
