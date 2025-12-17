@@ -61,7 +61,7 @@ Python 3.x  •  pandas  •  NumPy  •  scikit-learn  •  Matplotlib  •  Se
 ### Machine Learning
 - **Regression:** Simple & Multiple Linear Regression
 - **Classification:** Logistic Regression, Decision Trees
-- **Clustering:** K-Means (coming soon)
+- **Clustering:** K-Means
 - **Dimensionality Reduction:** PCA
 
 ### Visualization
