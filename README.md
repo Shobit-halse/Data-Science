@@ -26,7 +26,7 @@ jupyter notebook
 | ANOVA | `ANOVA (Analysis of Variance)/` |
 | Regression | `Regression/` |
 | Classification | `Logistic Regression and Decision Tree/` |
-| Clustering | *Coming Soon* |
+| Clustering | *K - Means Clustering* |
 | PCA | `Principal Component Analysis (PCA)/` |
 | Visualization | `Visualization/` |
 
